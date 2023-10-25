@@ -21,5 +21,6 @@ while True:
             list.append(int(original_pass[i]))
         for digit in list:
             digit += 3
+            digit %= 10
             decoded_pass += str(digit)
         print('Your password has been encoded and stored!')
